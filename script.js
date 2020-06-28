@@ -71,7 +71,7 @@ cameraOptions.onchange = () => {
   const updatedConstraints = {
     ...constraints,
     deviceId: {
-      exact: 'environment'
+      exact: cameraOptions.value
     }
   };
   startStream(updatedConstraints);
